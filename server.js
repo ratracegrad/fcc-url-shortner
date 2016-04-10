@@ -1,7 +1,7 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-var dotenv = require('dotenv');
+//var dotenv = require('dotenv');
 var favicon = require('serve-favicon');
 var path = require('path');
 var urlModel = require('./models/urlModel');
@@ -10,7 +10,7 @@ var url = require('url');
 /**
  * get environment variables
  */
-dotenv.load({});
+//dotenv.load({});
 var port = process.env.PORT || 3000;
 var mongodb = process.env.MONGODB || process.env.MONGOLAB_URI
 
