@@ -12,7 +12,7 @@ var url = require('url');
  */
 //dotenv.load({});
 var port = process.env.PORT || 3000;
-var mongodb = process.env.MONGODB || process.env.MONGOLAB_URI
+var mongodb = process.env.MONGODB || process.env.MONGOLAB_URI || 'mongodb://localhost:27017/urlshortner';
 
 /**
  * Connect to MongoDB.
